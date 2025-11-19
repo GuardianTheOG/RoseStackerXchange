@@ -1,0 +1,16 @@
+name: RoseStackerXchange
+main: com.farahsoftware.rsx.RoseStackerXchange
+version: 1.0.0
+api-version: 1.21
+author: GuardianTheOG
+description: Exchange RoseStacker spawners via GUI
+depend: [RoseStacker]
+commands:
+  rsx:
+    description: RoseStackerXchange parent command
+    usage: /rsx exchange | reload
+    aliases: [rosestackerx, rsxchange]
+permissions:
+  rsx.admin:
+    description: Allows admin actions like reload
+    default: op

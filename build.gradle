@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.farahsoftware.rsx'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://hub.spigotmc.org/nexus/content/repositories/public/' }
+    maven {
+        url = 'https://repo.rosewooddev.io/repository/public/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.21.10-R0.1-SNAPSHOT'
+    compileOnly 'dev.rosewood:rosestacker:1.5.37'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
